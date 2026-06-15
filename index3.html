@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6/12 과제</title>
+    <style>
+        @font-face {
+            font-family: 'Paperozi';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
+            font-weight: 100;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Paperozi';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-2ExtraLight.woff2') format('woff2');
+            font-weight: 200;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Paperozi';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-3Light.woff2') format('woff2');
+            font-weight: 300;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Paperozi';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Paperozi';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+            font-weight: 500;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Paperozi';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+            font-weight: 600;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Paperozi';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Paperozi';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+            font-weight: 800;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Paperozi';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
+            font-weight: 900;
+            font-display: swap;
+        }
+
+        body {
+            font-family: Paperozi;
+            background-color: black;
+            color: gold;
+            margin: 0;
+        }
+
+        header {
+            background-color: black;
+            color: gold;
+            text-align: center;
+            border: 2px solid #000;
+            padding: 30px;
+            margin-bottom: 20px;
+            font-size: 45px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #000;
+            color: gold;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        nav button {
+            color: gold;
+            background-color: #000;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        section {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .start {
+            border: 2px solid #000;
+            padding: 25px;
+            margin-bottom: 20px;
+            background-color: black;
+            font-size: 22px;
+            line-height: 1.7;
+        }
+
+        .left {
+            float: left;
+            width: 28%;
+            height: 260px;
+            border: 2px solid #000;
+            padding: 20px;
+            margin-right: 2%;
+            background-color: black;
+            color: gold;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .center {
+            float: left;
+            width: 28%;
+            height: 260px;
+            border: 2px solid #000;
+            padding: 20px;
+            margin-right: 2%;
+            background-color: black;
+            color: gold;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .right {
+            float: left;
+            width: 28%;
+            height: 260px;
+            border: 2px solid #000;
+            padding: 20px;
+            background-color: black;
+            color: gold;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .left:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .center:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .right:hover {
+            transform: rotate(3deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        footer {
+            clear: both;
+            text-align: center;
+            background-color: black;
+            color: gold;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>6/12 과제</header>
+
+    <nav>
+        <button onclick="location.href='http://127.0.0.1:5500/test1.html'">맛집 1</button>
+        <button onclick="location.href='http://127.0.0.1:5500/test2.html'">맛집 2</button>
+        <button onclick="location.href='http://127.0.0.1:5500/test3.html'">맛집 3</button>
+    
+    </nav>
+
+    <section>
+        <div class="start">
+            
+            <h2>논현 도셰프</h2>
+            <p>
+                서초구 반포동 / 논현역 근처
+            </p>
+            
+        </div>
+
+        <div class="left">
+            <h2>이탈리아 음식</h2>
+            <p>
+                아는 맛집이 기억이 나지 않아 네이버 상위노출에서 가지고 왔습니다.
+            </p>
+        </div>
+
+        <div class="center">
+            <h2>추천 이유</h2>
+            <p>
+                네이버 상위노출 / 개인적으로 엄청 맛있다고 느낀 맛집이 별로 없습니다.
+            </p>
+        </div>
+
+        <div class="right">
+            <h2>메뉴 사진</h2>
+            <p>
+                <a href="https://map.naver.com/p/entry/place/19594193?lng=127.021101&lat=37.5094341&placePath=/photo?additionalHeight=76&fromPanelNum=1&locale=ko&svcName=map_pcv5&timestamp=202606150312&fromPanelNum=1&locale=ko&svcName=map_pcv5&timestamp=202606150312&additionalHeight=76&entry=plt&searchType=place&c=15.00,0,0,0,dh">
+                    <img src="./4.jpeg" width="400" alt="피자">
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        피자가 맛있어 보입니다.
+    </footer>
+</body>
+
+</html>
